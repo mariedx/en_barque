@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="logo mr-3">
+    <%= link_to root_path do %>
+      <%= image_tag "logolong.png", height: 45%>
+    <% end %>
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Qui suis-je</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">A Propos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Avis</a>
+      </li>
+    </ul>
+
+    <span class="navbar-text">
+      liana.mikael@enbarque-orientation.com
+    </span>
+
+    <div class="ml-3 navbar-text">
+     <%= link_to "https://www.instagram.com/enbarque_orientation/" do %>
+      <i class="fab fa-instagram mr-2"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com/enbarqueorientation/" do %>
+      <i class="fab fa-facebook mr-2"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/company/enbarque-orientation/" do %>
+      <i class="fab fa-linkedin"></i>
+      <% end %>
+    </div>
+  </div>
+</nav>
