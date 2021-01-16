@@ -33,23 +33,26 @@
   position: relative;
  }
 
+.area-jumbotron {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 8%;
+}
+
 .header-jumbotron {
   text-transform: uppercase;
-  margin-left: 20%;
-  margin-right: 20%;
  }
 
 .lead-jumbotron {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 10%;
+  margin-top: 2%;
+  margin-bottom: 3%;
   text-transform: uppercase;
   letter-spacing: .3rem;
  }
 
  /*about*/
  .area-about {
-   margin-top: -32px;
+  margin-top: -32px;
  }
 
  .img_about {
@@ -60,6 +63,31 @@
  .text-about {
    margin-top: 20%;
    margin-left: 12%;
-   margin-right: 12%;
+   margin-right: 15%;
    line-height: 1.7;
  }
+
+ /*presentation*/
+ .grey-area {
+  background-color: #F8F9FA;
+ }
+
+ /*feedbacks*/
+ .card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(12, 15, 20, 0.02) 0px 0px 0px 1px,
+    rgba(12, 15, 20, 0.06) 0px 0px 1px 0px,
+    rgba(12, 15, 20, 0.06) 0px 2px 2px 0px;
+  padding: 16px 24px;
+  max-width: 344px;
+  margin: 20px auto;
+}
+
+.img-feedback {
+  height: 30vh;
+  width: 30vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
