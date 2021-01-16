@@ -31,7 +31,7 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
- }
+}
 
 .area-jumbotron {
   margin-left: 10%;
@@ -41,53 +41,51 @@
 
 .header-jumbotron {
   text-transform: uppercase;
- }
+}
 
 .lead-jumbotron {
   margin-top: 2%;
   margin-bottom: 3%;
   text-transform: uppercase;
   letter-spacing: .3rem;
- }
+}
 
- /*about*/
- .area-about {
+/*about*/
+.area-about {
   margin-top: -32px;
- }
+}
 
- .img_about {
+.img_about {
   max-width: 100%;
   height: auto;
- }
+}
 
- .text-about {
-   margin-top: 20%;
-   margin-left: 12%;
-   margin-right: 15%;
-   line-height: 1.7;
- }
+.text-about {
+  margin-top: 20%;
+  margin-left: 12%;
+  margin-right: 15%;
+  line-height: 1.7;
+}
 
- /*presentation*/
- .grey-area {
-  background-color: #F8F9FA;
- }
+/*presentation*/
+.grey-area {
+background-color: #F8F9FA;
+}
 
- /*feedbacks*/
- .card {
-  background-color: rgb(255, 255, 255);
-  border-radius: 4px;
-  box-shadow: rgba(12, 15, 20, 0.02) 0px 0px 0px 1px,
-    rgba(12, 15, 20, 0.06) 0px 0px 1px 0px,
-    rgba(12, 15, 20, 0.06) 0px 2px 2px 0px;
-  padding: 16px 24px;
-  max-width: 344px;
-  margin: 20px auto;
+/*feedbacks*/
+.card-top {
+  width: 20rem;
+  height: 40rem;
+  margin-bottom: 5%;
+}
+
+.card-bottom {
+  width: 20rem;
+  height: 33rem;
 }
 
 .img-feedback {
-  height: 30vh;
-  width: 30vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
 }
