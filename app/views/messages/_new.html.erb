@@ -1,0 +1,40 @@
+<div class="container text-center" id="contact">
+  <br><br>
+  <h2>Prenons contact !</h2>
+  <br><br>
+
+  <%= form_for :message, url: messages_path do |f| %>
+    <article>
+      <% if flash[:error].present? %>
+        <div id="error_explanation">
+          <p><%= flash[:error] %></p>
+        </div>
+      <% end %>
+    </article>
+    
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+      <br>
+      <%= image_tag("contact.svg", :class => "img-center mb-5") %>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <%= f.text_field  :name, required: true, class: "form-control", placeholder: "Votre nom" %><br>
+        <%= f.text_field :email, required: true, class: "form-control", placeholder: "Votre email" %><br>  
+        <%= f.text_field :phone_number, required: true, class: "form-control", placeholder: "Votre numéro de téléphone" %><br>
+
+        <%= f.text_area :body,
+                        rows: 8,
+                        cols: 40,
+                        required: true,
+                        class: "form-control",
+                        placeholder: "Votre message"%><br>
+        <div class="text-left">
+          <%= f.submit 'Envoyer', class: 'btn btn-outline-dark px-4 py-2' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <br><br>
+
+</div>
