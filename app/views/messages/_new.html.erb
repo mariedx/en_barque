@@ -13,12 +13,12 @@
     </article>
     
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="col-sm-6">
       <br>
-      <%= image_tag("contact.svg", :class => "img-center mb-5") %>
+      <%= image_tag("contact.svg", :class => "img-center") %>
       </div>
       
-      <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="col-sm-6">
         <%= f.text_field  :name, required: true, class: "form-control", placeholder: "Votre nom" %><br>
         <%= f.text_field :email, required: true, class: "form-control", placeholder: "Votre email" %><br>  
         <%= f.text_field :phone_number, required: true, class: "form-control", placeholder: "Votre numéro de téléphone" %><br>
