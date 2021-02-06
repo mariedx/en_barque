@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
       flash[:success] = "Votre message a bien été envoyé !"
       redirect_to root_path
     else
-      flash[:danger] = "Votre message n'a pas pu être envoyé. Réessayez, ou contactez-moi au 06.12.11.69.56."
+      flash[:danger] = "Votre message n'a pas pu être envoyé. Réessayez, ou contactez-moi à liana.mikael@enbarque-orientation.com"
       redirect_to root_path
     end
   end
@@ -19,4 +19,5 @@ class MessagesController < ApplicationController
   def message_params
     params.require(:message).permit(:name, :email, :phone_number, :body)
   end
+  
 end
