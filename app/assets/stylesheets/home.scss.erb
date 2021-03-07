@@ -1,65 +1,55 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-body {
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /*navbar*/
 .logo {
   margin-top: -8px;
+  margin-right: 10px;
 }
 
 /*jumbotron*/
 .background-image {
-  background-image: url(<%= asset_path 'paperboat.jpg' %>);
-  width: 100%;
-  height: 40rem;
-  text-align: center;
-  background-position-y: 60%;
-  opacity: 0.8;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
+  height: 94vh;
+  background-size: cover;
+  background-position-y: 68%;
+  opacity: 0.8;
+  background-image: url(<%= asset_path 'paperboat.jpg' %>);
 }
 
 .area-jumbotron {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 8%;
+  margin: 8% 10%;
+
+  a {
+    margin: 5px 0;
+  }
 }
 
 .header-jumbotron {
-  text-transform: uppercase;
+  font-size: calc(20px + 2vw;);
 }
 
 .lead-jumbotron {
-  margin-top: 2%;
-  margin-bottom: 3%;
   text-transform: uppercase;
   letter-spacing: .3rem;
+  padding: 2% 0;
 }
 
 /*about*/
-.area-about {
-  margin-top: -32px;
-}
+#about {
+  margin: 4%;
+  
+  .about-text {
+    padding: 1% 6%;
+  }
 
-.img_about {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-about {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 12%;
-  margin-right: 15%;
-  line-height: 1.7;
+  .img_about {
+    height: 100%;
+    width: 100%;
+    padding: 6%;
+  }
 }
 
 /*presentation*/
@@ -67,12 +57,53 @@ body {
 background-color: #F8F9FA;
 }
 
+.embedresize {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin: 0 auto;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/*services*/
+#services {
+  margin: 0 7%;
+}
+
+.card-services-top {
+  margin: 20px 0;
+  min-height: 530px;
+}
+
+.card-services-bottom {
+  margin: 20px 0;
+  min-height: 370px;
+
+  .card-body {
+    padding: 0 8%;
+  }
+}
+
+.pricing-card-title {
+  padding-top: 15px;
+}
+
 /*feedbacks*/
 .card-feedbacks {
   width: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 4%;
+  margin: 6% 17%;
 }
 
 .img-feedback {
@@ -88,4 +119,39 @@ background-color: #F8F9FA;
   padding-right: 5%;
   width: 100%;
   height: auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 650px) {
+  .background-image {
+    background-position-x: 68%;
+  }
+
+  .area-jumbotron {
+  margin: 13% 10%;
+
+    a {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+
+    .lead-jumbotron {
+    padding: 4% 0;
+    }
+  }
+
+  .card-feedbacks {
+    margin: 10% 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card-services-top, .card-services-bottom {
+    min-height: auto;
+    margin: 4% 3%;
+  }
+
+  .embedresize {
+  margin: 0 3%;
+  }
 }
