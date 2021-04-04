@@ -3,14 +3,27 @@ html, body {
   padding: 0;
 }
 
+.btn-primary {
+  background-color: #477687 !important;
+  border: none;
+
+  &:hover, &:active {
+  background-color: #3e6775 !important;
+  }
+}
+
 /*navbar*/
 .logo {
   margin-top: -8px;
   margin-right: 10px;
 }
 
+.navbar{ 
+  background-color: white;
+}
+
 /*jumbotron*/
-.background-image {
+.jumbotron {
   position: relative;
   height: 94vh;
   background-size: cover;
@@ -42,13 +55,13 @@ html, body {
   margin: 4%;
   
   .about-text {
-    padding: 1% 6%;
+    padding: 5%;
   }
 
   .img_about {
     height: 100%;
     width: 100%;
-    padding: 6%;
+    padding: 0 5%;
   }
 }
 
@@ -104,6 +117,14 @@ background-color: #F8F9FA;
 .card-feedbacks {
   width: auto;
   margin: 6% 17%;
+}
+
+.card-text-long {
+  padding: 2%;
+}
+
+.card-text-short {
+  padding: 5%;
 }
 
 .img-feedback {
