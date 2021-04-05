@@ -92,14 +92,14 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_LOGIN'],
     :password => ENV['SENDGRID_PWD'],
-    :domain => 'gmail.com',
+    :domain => 'enbarque-orientation.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
   }
 
-  config.action_mailer.default_url_options = { :host => 'enbarque-orientation.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'en-barque.herokuapp.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
