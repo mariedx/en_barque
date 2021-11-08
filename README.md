@@ -10,3 +10,5 @@ Stack :
 https://enbarque-orientation.com/
 
 ![](app/assets/images/Logoetire.png)
+
+Pour lancer, rails server
